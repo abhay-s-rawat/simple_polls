@@ -61,7 +61,7 @@ SimplePollsWidget(
 ```
 ## Screenshots
 
-![](https://raw.githubusercontent.com/abhay-s-rawat/simple_poll/main/images/en_options.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_poll/main/images/en_results.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_poll/main/images/it_options.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_poll/main/images/it_results.jpg)
+![](https://raw.githubusercontent.com/abhay-s-rawat/simple_polls/main/example/images/en_options.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_polls/main/example/images/en_results.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_polls/main/example/images/it_options.jpg) ![](https://raw.githubusercontent.com/abhay-s-rawat/simple_polls/main/example/images/it_results.jpg)
 
 >NOTE:
 >Allowed language codes are it,fr,es,gr,en where en is default.
