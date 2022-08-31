@@ -1,4 +1,6 @@
 /// This file contains the example showing how to use poll widget in your application.
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:simple_polls/simple_polls.dart';
 
@@ -43,12 +45,11 @@ class ExampleApp extends StatelessWidget {
         /// This function will be called after all the calculation like reducing total polls and marking previous option not selected.
         /// It returns the PollFrameModel .Use this function to do some extra operations like storing this poll into other variable.
         onSelection: (PollFrameModel model, PollOptions? selectedOptionModel) {
-          print('Now total polls are : ${model.totalPolls}');
-          print('Selected option has label : ${selectedOptionModel!.label}');
+          log('Now total polls are : ${model.totalPolls}');
+          log('Selected option has label : ${selectedOptionModel!.label}');
         },
         onReset: (PollFrameModel model) {
-          print(
-              'Poll has been reset, this happens only in case of editable polls');
+          log('Poll has been reset, this happens only in case of editable polls');
         },
         optionsBorderShape: const StadiumBorder(), // Default is stadium border
 

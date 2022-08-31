@@ -43,18 +43,14 @@ class _PollStatusWidgetState extends State<PollStatusWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+    return Wrap(
       children: [
-        Flexible(
-          flex: 2,
-          child: Text(
-            '${widget.model.totalPolls} ${polls_translation[widget.languageCode]!}',
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              fontSize: 12,
-              color: Colors.grey,
-            ),
+        Text(
+          '${widget.model.totalPolls} ${pollsTranslation[widget.languageCode]!}',
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(
+            fontSize: 12,
+            color: Colors.grey,
           ),
         ),
         const Text(
@@ -65,21 +61,18 @@ class _PollStatusWidgetState extends State<PollStatusWidget> {
             color: Colors.grey,
           ),
         ),
-        Flexible(
-          flex: 2,
-          child: Text(
-            widget.model.endTime!.isBefore(DateTime.now().toUtc())
-                ? polling_ended_translation[widget.languageCode]!
-                : '${ends_translation[widget.languageCode]!}: ${timeago.format(
-                    widget.model.endTime!,
-                    allowFromNow: true,
-                    locale: widget.languageCode,
-                  )}',
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              fontSize: 12,
-              color: Colors.grey,
-            ),
+        Text(
+          widget.model.endTime!.isBefore(DateTime.now().toUtc())
+              ? pollingEndedTranslation[widget.languageCode]!
+              : '${endsTranslation[widget.languageCode]!}: ${timeago.format(
+                  widget.model.endTime!,
+                  allowFromNow: true,
+                  locale: widget.languageCode,
+                )}',
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(
+            fontSize: 12,
+            color: Colors.grey,
           ),
         ),
 
@@ -99,17 +92,14 @@ class _PollStatusWidgetState extends State<PollStatusWidget> {
               color: Colors.grey,
             ),
           ),
-          Flexible(
-            flex: 1,
-            child: GestureDetector(
-              onTap: widget.onUndo,
-              child: Text(
-                undo_poll_translation[widget.languageCode]!,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontSize: 13,
-                ),
+          GestureDetector(
+            onTap: widget.onUndo,
+            child: Text(
+              undoPollTranslation[widget.languageCode]!,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                color: Theme.of(context).primaryColor,
+                fontSize: 13,
               ),
             ),
           ),

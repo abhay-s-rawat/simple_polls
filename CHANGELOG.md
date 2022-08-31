@@ -39,3 +39,7 @@ onSelection: (PollFrameModel model) {
 ## 1.0.7
 
 * Minor optimizations.
+
+## 1.0.8
+
+* Minor optimizations.
