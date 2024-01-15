@@ -6,6 +6,7 @@ Map<String, String> pollsTranslation = {
   'de': 'Umfragen',
   'fr': 'les sondages',
   'es': 'centro',
+  'pt': 'votos',
 };
 
 /// The [endsTranslation] variable is used for translation for 'Ends' word.
@@ -15,6 +16,7 @@ Map<String, String> endsTranslation = {
   'de': 'Endet',
   'fr': 'Prend fin',
   'es': 'Termina',
+  'pt': 'Termina',
 };
 
 /// The [pollingEndedTranslation] variable is used for translation for 'Polling ended' word.
@@ -24,6 +26,7 @@ Map<String, String> pollingEndedTranslation = {
   'de': 'Umfrage beendet',
   'fr': 'Sondage terminé',
   'es': 'Encuesta finalizada',
+  'pt': 'Enquete finalizada',
 };
 
 /// The [undoPollTranslation] variable is used for translation for 'undo' button.
@@ -33,4 +36,5 @@ Map<String, String> undoPollTranslation = {
   'de': 'rückgängig machen',
   'fr': 'annuler',
   'es': 'deshacer',
+  'pt': 'Desfazer',
 };
